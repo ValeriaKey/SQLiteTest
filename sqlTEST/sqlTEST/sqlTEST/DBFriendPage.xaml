@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sqlTEST.DBFriendPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Name"/>
+            <Entry Text="{Binding Name}"/>
+            
+            <Label Text="Email"/>
+            <Entry Text="{Binding Email}"/> 
+            
+            <Label Text="Phone"/>
+            <Entry Text="{Binding Phone}"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Save" Clicked="SaveFriend"/>
+                <Button Text="Delete" Clicked="DeleteFriend"/>
+                <Button Text="Cancel" Clicked="Cancel"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
